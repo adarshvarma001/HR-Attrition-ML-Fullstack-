@@ -58,3 +58,36 @@ pip install -r requirements.txt
 python app.py
 
 This will start the backend server at http://localhost:5000.
+
+**IF BACKEND ERROR APPEARS FOLLOW THE BELOW STEPS** 
+
+*open terminal and run the below commands 
+cd backend
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass .\venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip uninstall scikit-learn -y
+pip install scikit-learn==1.6.1  ///make sure it is in the 1.6.1 version
+pip show scikit-learn
+pip install -r requirements.txt
+python app.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
